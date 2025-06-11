@@ -1,0 +1,19 @@
+import React from "react";
+
+const About = () => {
+  return (
+    <div className="bg-white text-2xl md:text-4xl text-black h-screen w-full flex justify-center px-6">
+      <div className="h-full flex flex-col md:flex-row items-center gap-8">
+        <h1 className="font-extrabold">About Us</h1>
+        <p className="text-2xl md:text-3xl font-bold">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero rem
+          voluptates fugit tenetur reprehenderit harum, doloremque iure,
+          necessitatibus deserunt voluptatibus mollitia repellat impedit! Porro
+          molestiae, cum reprehenderit esse a quod.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default About;
