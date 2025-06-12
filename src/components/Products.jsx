@@ -2,6 +2,7 @@ import React from "react";
 import can1 from "../img/can1.avif";
 import can from "../img/can.avif"
 import coca from "../img/coca-can.avif"
+import { motion } from "framer-motion";
 
 const Products = () => {
   return (
