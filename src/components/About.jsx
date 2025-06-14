@@ -1,20 +1,20 @@
-import { useTransform, motion } from "framer-motion";
-import React from "react";
+import { useTransform, useScroll, motion } from "framer-motion";
+import React, { useRef } from "react";
 
-const About = ({ scrollYProgress }) => {
-  const opacity = useTransform(scrollYProgress, [0, 0.66], [0.66, 0]);
+const About = () => {
+  
+
+  
   return (
     <motion.div
-      style={{ opacity }}
-      className=" bg-white text-2xl md:text-4xl text-black h-screen w-full flex justify-center px-6"
+     
+      className="bg-white text-2xl md:text-4xl text-black h-screen w-full flex justify-center px-6"
     >
       <div className="h-full flex flex-col md:flex-row items-center gap-8">
         <h1 className="font-extrabold">About Us</h1>
         <p className="text-2xl md:text-3xl font-bold">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero rem
-          voluptates fugit tenetur reprehenderit harum, doloremque iure,
-          necessitatibus deserunt voluptatibus mollitia repellat impedit! Porro
-          molestiae, cum reprehenderit esse a quod.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem
+          voluptates fugit tenetur reprehenderit harum, doloremque iure...
         </p>
       </div>
     </motion.div>
