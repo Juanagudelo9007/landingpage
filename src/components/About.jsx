@@ -8,24 +8,24 @@ const About = () => {
     offset: ["start center", "end start"],
   });
 
-const yContainer = useTransform(scrollY, [0, 700], [0, -700]);
-const yTitle = useTransform(scrollY, [0, 600], [0, -600]);
-const  yText = useTransform(scrollY, [0, 700], [0, -700]);
+  const yContainer = useTransform(scrollY, [100, 400], [0, -400]);
+  const yTitle = useTransform(scrollY, [100, 300], [0, -300]);
+  const yText = useTransform(scrollY, [300, 600], [0, -600]);
 
   return (
-    <motion.div 
+    <motion.div
       ref={about}
-      style={{y: yContainer}}
-    className="bg-white text-2xl md:text-4xl text-black h-screen w-full flex justify-center px-6">
+      style={{ y: yContainer }}
+      className="bg-white text-2xl md:text-4xl text-black h-screen w-full flex justify-center px-6"
+    >
       <div className="h-full flex flex-col md:flex-row items-center gap-8">
-        <motion.h1 
-         style={{y: yTitle}}
-        className="font-extrabold">
+        <motion.h1 style={{ y: yTitle }} className="font-extrabold">
           About Us
         </motion.h1>
-        <motion.p 
-          style={{y:yText}}
-        className="text-2xl md:text-3xl font-bold">
+        <motion.p
+          style={{ y: yText }}
+          className="text-2xl md:text-3xl font-bold"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem
           voluptates fugit tenetur reprehenderit harum, doloremque iure...
         </motion.p>
